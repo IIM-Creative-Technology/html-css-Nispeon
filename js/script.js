@@ -1,25 +1,28 @@
 
 
+document.querySelector("header").addEventListener("mouseenter", showNav);
+document.querySelector("header").addEventListener("mouseleave", hideNav);
 
-    let icones = document.getElementsByClassName(".openNav");
+// Pour mobile
+document.querySelector("header").addEventListener("click", showNav);
 
-
-    // for (let i = 0 ; i < icones.length; i++) {
-    //     icones.addEventListener("click", showNav());
-    // }
-
-    document.querySelector("i").addEventListener("click", showNav);
-
-    function showNav() {
-
-        document.querySelector(".burger").id = "shown";
-        console.log("cc");
-
-        
+window.addEventListener('click', function(e){
+    if (!document.querySelector('header').contains(e.target)){
+        document.querySelector(".burger").id = "hidden";
     }
+});
 
-    window.addEventListener('click', function(e){
-        if (!document.querySelector('header').contains(e.target)){
-            document.querySelector(".burger").id = "hidden";
-        }
-    });
+function showNav() {
+
+    document.querySelector(".burger").id = "shown";
+    console.log("cc");
+
+    
+}
+
+function hideNav() {
+    document.querySelector(".burger").id = "hidden";
+}
+
+
+

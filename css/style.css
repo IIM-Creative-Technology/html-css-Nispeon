@@ -6,9 +6,9 @@
 
 header {
     width: 20%;
-    background-color: #d7ddd8;
+    background-color: #dcddde;
     height: 100vH;
-    position: absolute;
+    position: fixed;
     transition: 0.5s;
 }
 
@@ -17,6 +17,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    align-items: center;
 }
 
 nav div {
@@ -24,6 +25,7 @@ nav div {
     margin: 20% 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav div a {

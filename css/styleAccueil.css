@@ -7,6 +7,9 @@
 .accueil {
     display: flex;
     height: 100vH;
+    /* background-image: url("../img/bg.gif");
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 
@@ -24,9 +27,8 @@
 }
 
 .category {
-    background-color: pink;
+    background-color: #8e9297;
     width: 60%;
-    height: 50vH;
     margin: auto;
     margin-left: 30%;
     display: flex;
@@ -36,14 +38,47 @@
 
 .tag {
     height: 10vH;
-    background-color: aquamarine;
+    background-color: #2f3136;
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 10%;
+}
+.tag h1 {
+
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .taglist {
-    height: 40vH;
-    background-color: blue;
-    width: 80%;
+    
+    /* background-color: blue; */
+    width: 90%;
+    border: 1px #36393f solid;
+    border-top: none;
+}
+.taglist a {
+    text-decoration: none;
+    color: #18191c;
+}
+
+.pollList {
+    height: 10vH;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    font-family: 'Ubuntu', sans-serif;
+    border: solid 1px lightgray;
+    border-bottom: none;
+    transition: all .2s ease-in-out;
+    cursor: pointer; 
+}
+
+.pollList:hover {
+    background-color: #dcddde;
+    transform: scale(1.2); 
+
 }
 
 
