@@ -2,12 +2,8 @@
 <html lang="fr">
     <head>
 
-        <meta author="Julien Cousin-Alliot">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <!-- <link rel="icon" href="/favicon.png"> -->
-        <title>Accueil</title>
+        <?php include 'head.php' ?>
+        <title>Accueil/Votingo</title>
         <script src="https://kit.fontawesome.com/79d4761c9b.js" crossorigin="anonymous"></script>
         
     </head>
