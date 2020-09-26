@@ -3,6 +3,7 @@
 
 
 @import "styleAccueil.css";
+@import "stylePoll.css";
 
 header {
     width: 20%;
