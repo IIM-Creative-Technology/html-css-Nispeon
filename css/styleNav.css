@@ -8,13 +8,20 @@ header {
 
 nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    height: 100%;
 }
 
 nav div {
+    display: flex;
+    width: 100%;
+}
+
+
+nav div div{
     width: 50%;
     margin: 20% 0;
     display: flex;
@@ -22,15 +29,34 @@ nav div {
     align-items: center;
 }
 
-nav div a {
+nav >  div:last-child {
+    margin-top: auto;
+
+}
+
+nav div div a {
     text-decoration: none;
     color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: larger;
 }
 
+nav div div a:last-child {
+    display: contents;
+}
+
+
 .openNav {
     font-size: 2em;
     cursor: pointer;
     color: white;
 }
+
+header img {
+    width: 80%;
+}
+
+header img:last-child {
+    width: 50%;
+}
+
