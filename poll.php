@@ -13,9 +13,52 @@
 
     <body class="pollBody">
         
-    <?php include 'headerNav.php' ?>
+        <?php include 'headerNav.php' ?>
+
+        <main>
+
+            <section class="pollVote4">
+
+                <div class="pollTitle">
+                    <h1>Question du sondage séléctionné</h1>
+                </div>
+
+                <div class="pollChoices4">
+
+                    <div class="pollOption4">
+
+                        <h2>Option 1</h2>
+
+                    </div>
+
+                    <div class="pollOption4">
+
+                        <h2>Option 2</h2>
+
+                    </div>
+
+                    <div class="pollOption4">
+
+                        <h2>Option 3</h2>
+
+                    </div>
+
+                    <div class="pollOption4">
+
+                        <h2>Option 4</h2>
+
+                    </div>
+
+                </div>
 
 
 
+            </section>
+        
+        
+        </main>
+
+
+        <script src="js/script.js"></script> 
     </body>
 </html>

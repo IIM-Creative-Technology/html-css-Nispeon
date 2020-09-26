@@ -1,0 +1,53 @@
+.pollBody {
+    display: flex;
+    height: 100vH;
+    background-image: linear-gradient(white, peachpuff, white); 
+}
+
+.pollBody main {
+    width: 100%;
+}
+
+.pollVote4 {
+    /* background-color: red; */
+    width: 70%;
+    margin: auto;
+    height: 50vH;
+    margin-left: 20%;
+    flex-direction: column;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.pollTitle {
+    background-color: #2f3136;
+    height: 10vH;
+    align-items: center;
+    display: flex;
+    padding-left: 5%;
+    color: white
+}
+
+.pollChoices4 {
+    /* background-color: blue; */
+    height: 40vH;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pollOption4 {
+    background-color: pink;
+    border: 2px black solid;
+    width: 45%;
+    height: 20vH;
+    display: flex;
+    align-items: center;
+}
+
+.pollVote4 h2 {
+    text-align: center;
+    width: 100%;
+}
