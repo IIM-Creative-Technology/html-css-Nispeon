@@ -14,7 +14,7 @@
 
         <main>
 
-            <section class="pollVote4">
+            <section class="pollVote">
 
                 <div class="pollTitle">
                     <h1>Question du sondage séléctionné</h1>
@@ -22,29 +22,121 @@
 
                 <div class="pollChoices">
 
-                    <div class="pollOption4">
+                    <a href="results.php">
 
                         <h2>Option 1</h2>
 
-                    </div>
+                    </a>
 
-                    <div class="pollOption4">
+                    <a href="results.php">
 
                         <h2>Option 2</h2>
 
-                    </div>
+                    </a>
 
-                    <div class="pollOption4">
+                    <a href="results.php">
 
                         <h2>Option 3</h2>
 
-                    </div>
+                    </a>
 
-                    <div class="pollOption4">
+                    <a href="results.php">
 
                         <h2>Option 4</h2>
 
-                    </div>
+                    </a>
+
+                </div>
+
+
+
+            </section>
+
+            <section class="pollVote">
+
+                <div class="pollTitle">
+                    <h1>Question du sondage séléctionné</h1>
+                </div>
+
+                <div class="pollChoices oneColumn">
+
+                    <a href="results.php">
+
+                        <h2>Option 1</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 2</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 3</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 4</h2>
+
+                    </a>
+
+                </div>
+
+
+
+            </section>
+
+            <section class="pollVote">
+
+                <div class="pollTitle">
+                    <h1>Question du sondage séléctionné</h1>
+                </div>
+
+                <div class="pollChoices oneColumn">
+
+                    <a href="results.php">
+
+                        <h2>Option 1</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 2</h2>
+
+                    </a>
+
+
+                </div>
+
+
+
+            </section>
+
+            <section class="pollVote">
+
+                <div class="pollTitle">
+                    <h1>Question du sondage séléctionné</h1>
+                </div>
+
+                <div class="pollChoices">
+
+                    <a href="results.php">
+
+                        <h2>Option 1</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 2</h2>
+
+                    </a>
+
 
                 </div>
 

@@ -4,43 +4,8 @@
 
 @import "styleAccueil.css";
 @import "stylePoll.css";
+@import "styleNav.css";
 
-header {
-    width: 20%;
-    background-color: #2f3136;
-    height: 100vH;
-    position: fixed;
-    transition: 0.5s;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: center;
-}
-
-nav div {
-    width: 50%;
-    margin: 20% 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav div a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: larger;
-}
-
-.openNav {
-    font-size: 2em;
-    cursor: pointer;
-    color: white;
-}
 
 
 
