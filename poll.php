@@ -4,7 +4,7 @@
 
         <?php include 'head.php' ?>
         <title>Voter !/Votingo</title>
-        <script src="https://kit.fontawesome.com/79d4761c9b.js" crossorigin="anonymous"></script>
+        
 
     </head>
 
@@ -148,6 +148,5 @@
         </main>
 
 
-        <script src="js/script.js"></script> 
     </body>
 </html>

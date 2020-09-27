@@ -27,3 +27,5 @@
 
 
 </header>
+
+<script src="js/navScript.js"></script> 
