@@ -128,7 +128,7 @@
                             </div>
 
                             <div>
-                                <p>+20 pts</p>
+                                <p>20 pts</p>
                             </div>
 
                         </li>
@@ -143,7 +143,7 @@
                             </div>
 
                             <div>
-                                <p>+20 pts</p>
+                                <p>20 pts</p>
                             </div>
 
                         </li>
@@ -158,7 +158,7 @@
                             </div>
 
                             <div>
-                                <p>+20 pts</p>
+                                <p>20 pts</p>
                             </div>
 
                         </li>
@@ -169,11 +169,11 @@
                             </div>
 
                             <div>
-                                <p>Réponse donnée</p>
+                                <p class="barred">Réponse donnée</p>
                             </div>
 
                             <div>
-                                <p>+0 pts</p>
+                                <p>0 pts</p>
                             </div>
 
                         </li>
@@ -188,7 +188,7 @@
                             </div>
 
                             <div>
-                                <p>+20 pts</p>
+                                <p>20 pts</p>
                             </div>
 
                         </li>

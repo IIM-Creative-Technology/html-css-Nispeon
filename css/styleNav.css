@@ -2,8 +2,18 @@ header {
     width: 20%;
     background-color: #2f3136;
     min-height: 100vH;
+    height: 100vH;
     position: fixed;
     transition: 0.5s;
+    z-index: 15;
+}
+
+#hidden {
+    left: -10%;
+}
+
+#shown {
+    left: 0%;
 }
 
 nav {
@@ -23,7 +33,7 @@ nav div {
 
 nav div div{
     width: 50%;
-    margin: 20% 0;
+    margin: 15% 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,3 +92,39 @@ header input::placeholder {
     color: white;
     padding: 2px;
 }
+
+
+@media screen and (max-width: 991px) {
+
+    header {
+        width: 30%;
+    }
+
+    #hidden {
+        left: -15%;
+    }
+    
+    #shown {
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    header {
+        width: 50%;
+    }
+
+    #hidden {
+        left: -25%;
+    }
+    
+    #shown {
+        left: 0%;
+    }
+
+    nav div div a {
+        font-size: large;
+    }
+
+} 

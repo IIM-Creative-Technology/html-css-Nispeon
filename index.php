@@ -47,7 +47,7 @@
 
                     <a href="poll.php"><div class="pollList"><h2>Quelle équipe va gagner ce soir ?</h2></div></a>
 
-                    <a href="poll.php"></a><div class="pollList"><h2>Qui va se faire éliminer ?</h2></div></a>
+                    <a href="poll.php"><div class="pollList"><h2>Qui va se faire éliminer ?</h2></div></a>
 
 
                 </div>
@@ -67,9 +67,9 @@
 
                     <a href="poll.php"><div class="pollList"><h2>Qui sera le dauphin de cette année ?</h2></div></a>
 
-                    <a href="poll.php"></a><div class="pollList"><h2>Qui sera le champion constructeur cette année ?</h2></div></a>
+                    <a href="poll.php"><div class="pollList"><h2>Qui sera le champion constructeur cette année ?</h2></div></a>
 
-                    <a href="poll.php"></a><div class="pollList"><h2>Qui deviendra champion du monde cette année ?</h2></div></a>
+                    <a href="poll.php"><div class="pollList"><h2>Qui deviendra champion du monde cette année ?</h2></div></a>
 
 
                 </div>
