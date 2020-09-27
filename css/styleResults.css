@@ -57,7 +57,7 @@
 }
 
 .scoreboard > div:not(:first-child) {
-    background-color: turquoise;
+    background-color: #dcddde;
     height: 5vH;
     width: 80%;
     margin: 1% auto;
@@ -94,3 +94,7 @@
     width: 40%;
 }
 
+#user {
+    background-color: #72767d;
+    color: black;
+}
