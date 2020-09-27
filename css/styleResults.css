@@ -16,8 +16,6 @@
     margin: auto;
     margin-top: 5%;
     margin-left: 20%;
-    /* background-color: red; */
-    background-image: url(../img/daveee.png);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,13 +32,65 @@
     color: white;
 }
 
-.pollResults div {
+.pollResults > div {
     height: 90vH;
     width: 50%;
+    padding: 5%;
 }
 
-.pollResults div:first-child{
+.pollResults > div:first-child{
     height: 10vH;
     width: 100%;
 
 }
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2f3136;
+}
+
+.scoreboard > div:first-child {
+    margin-bottom: 5%;
+}
+
+.scoreboard > div:not(:first-child) {
+    background-color: turquoise;
+    height: 5vH;
+    width: 80%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.scoreboard > div:not(:first-child) div {
+    font-size: 1.17em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.scoreboard > div:not(:first-child) div:nth-of-type(odd) {
+    width: 30%;
+}
+
+.scoreboard > div:not(:first-child) div:nth-of-type(1) {
+    display: contents;
+    padding-left: 5%;
+}
+
+.scoreboard > div:not(:first-child) div:nth-of-type(3) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scoreboard > div:not(:first-child) div:nth-of-type(even) {
+    width: 40%;
+}
+
