@@ -94,11 +94,11 @@
                     <div>
                         <p>Vous êtes classé numéro</p>
 
-                        <p>1</p>
+                        <p>3</p>
 
                         <p>du classement</p>
 
-                        <p>avec 100 pts</p>
+                        <p>avec 80 pts</p>
 
 
                     </div>

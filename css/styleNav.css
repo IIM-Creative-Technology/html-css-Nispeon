@@ -1,7 +1,7 @@
 header {
     width: 20%;
     background-color: #2f3136;
-    height: 100vH;
+    min-height: 100vH;
     position: fixed;
     transition: 0.5s;
 }
@@ -60,3 +60,25 @@ header img:last-child {
     width: 50%;
 }
 
+header form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+header input {
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #72767d;
+    border: none;
+    color: white;
+    padding: 2px;
+}
+
+header input::placeholder {
+    color: white;
+    padding: 2px;
+}
