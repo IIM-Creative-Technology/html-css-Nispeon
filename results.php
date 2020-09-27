@@ -13,6 +13,7 @@
 
             <section class="pollResults">
 
+
                 <div class="resultsTitle">
 
                     <h1>Résultats du sondage</h1>
@@ -62,6 +63,20 @@
                 </div>
 
                 <div class="scorePers">
+
+                    <div><h2>Classement personnel</h2></div>
+
+                    <div>
+                        <p>Vous êtes classé numéro</p>
+
+                        <p>1</p>
+
+                        <p>du classement</p>
+
+                        <p>avec 100 pts</p>
+
+
+                    </div>
 
                 </div>
 

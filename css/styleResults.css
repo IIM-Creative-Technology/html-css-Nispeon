@@ -11,8 +11,6 @@
 .pollResults {
     width: 70%;
     min-height: 100vH;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin: auto;
     margin-top: 5%;
     margin-left: 20%;
@@ -22,9 +20,7 @@
 }
 
 .resultsTitle {
-    height: 10vH;
     display: flex;
-    padding: 10% 0 10% 0;
     justify-content: center;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
@@ -32,14 +28,13 @@
     color: white;
 }
 
-.pollResults > div {
-    height: 90vH;
+.pollResults > div:not(:first-child) {
+    min-height: 90vH;
     width: 50%;
     padding: 5%;
 }
 
 .pollResults > div:first-child{
-    height: 10vH;
     width: 100%;
 
 }
@@ -96,5 +91,30 @@
 
 #user {
     background-color: #72767d;
+    color: black;
+}
+
+.scorePers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2f3136;
+}
+
+
+.scorePers > div:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 150%;
+    margin-top: 20%;
+    line-height: 200%;
+}
+
+.scorePers > div:not(:first-child) p:nth-of-type(2){
+    font-size: 200%;
     color: black;
 }
