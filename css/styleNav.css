@@ -1,0 +1,139 @@
+header {
+    width: 20%;
+    background-color: #2f3136;
+    min-height: 100vH;
+    height: 100vH;
+    position: fixed;
+    transition: 0.5s;
+    z-index: 15;
+}
+
+#hidden {
+    left: -10%;
+}
+
+#shown {
+    left: 0%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+
+nav div {
+    display: flex;
+    width: 100%;
+    transition: 0.5s;
+}
+
+nav > div:not(:last-child):hover {
+    background-color: #292b30;
+}
+
+
+nav div div{
+    width: 50%;
+    margin: 15% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav >  div:last-child {
+    margin-top: auto;
+
+}
+
+nav div div a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: larger;
+}
+
+
+
+nav div div a:last-child {
+    display: contents;
+}
+
+
+.openNav {
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+
+header img {
+    width: 80%;
+}
+
+header img:last-child {
+    width: 50%;
+}
+
+header form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+header input {
+    width: 80%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #72767d;
+    border: none;
+    color: white;
+    padding: 2px;
+}
+
+
+header input::placeholder {
+    color: white;
+    padding: 2px;
+}
+
+
+@media screen and (max-width: 991px) {
+
+    header {
+        width: 30%;
+    }
+
+    #hidden {
+        left: -15%;
+    }
+    
+    #shown {
+        left: 0%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    header {
+        width: 50%;
+    }
+
+    #hidden {
+        left: -25%;
+    }
+    
+    #shown {
+        left: 0%;
+    }
+
+    nav div div a {
+        font-size: large;
+    }
+
+} 

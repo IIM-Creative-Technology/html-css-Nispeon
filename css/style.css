@@ -1,0 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+
+@import "styleAccueil.css";
+@import "stylePoll.css";
+@import "styleNav.css";
+@import "styleResults.css";
+@import "styleScrollbar.css";
+
+

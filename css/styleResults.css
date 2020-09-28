@@ -1,0 +1,267 @@
+.resultsBody {
+    display: flex;
+    min-height: 100vH;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);}
+
+.resultsBody main {
+    width: 100%;
+}
+
+.pollResults {
+    width: 70%;
+    margin: auto;
+    margin-top: 3%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.resultsTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #2f3136;
+    color: white;
+    height: 10vH;
+}
+
+.pollResults > div:not(:first-child) {
+    width: 50%;
+    padding: 5%;
+}
+
+.pollResults > div:first-child{
+    width: 100%;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2f3136;
+}
+
+.scoreboard > div:first-child {
+    margin-bottom: 5%;
+}
+
+.scoreboard > div:not(:first-child) {
+    background-color: #dcddde;
+    height: 5vH;
+    width: 80%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.scoreboard > div:not(:first-child) div {
+    font-size: 1.17em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.scoreboard > div:not(:first-child):nth-child(1n) {
+    background-color: #74b9ff;
+}
+
+.scoreboard > div:not(:first-child):nth-child(1n):hover {
+    background-color: #3498db;
+}
+
+.scoreboard > div:not(:first-child):nth-child(2n) {
+    background-color: #ff7675;
+}
+.scoreboard > div:not(:first-child):nth-child(2n):hover {
+    background-color: #e74c3c;
+}
+
+.scoreboard > div:not(:first-child):nth-child(3n) {
+    background-color: #55efc4;
+}
+
+.scoreboard > div:not(:first-child):nth-child(3n):hover {
+    background-color: #2ecc71;
+}
+
+.scoreboard > div:not(:first-child):nth-child(4n) {
+    background-color: #ffeaa7;
+}
+
+.scoreboard > div:not(:first-child):nth-child(4n):hover {
+    background-color: #f1c40f;
+}
+
+.scoreboard > div:not(:first-child) div:nth-of-type(odd) {
+    width: 30%;
+}
+
+.scoreboard > div:not(:first-child) div:nth-of-type(1) {
+    display: contents;
+    padding-left: 5%;
+}
+
+.scoreboard > div:not(:first-child) div:nth-of-type(3) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.scoreboard > div:not(:first-child) div:nth-of-type(even) {
+    width: 40%;
+}
+
+#user {
+    background-color: #f1c40f;
+    transform: scale(1.3);
+    color: black;
+}
+
+.scorePers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2f3136;
+}
+
+
+.scorePers > div:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 150%;
+    margin-top: 20%;
+    line-height: 200%;
+}
+
+.scorePers > div:not(:first-child) p:nth-of-type(2){
+    font-size: 200%;
+    color: black;
+}
+
+.pollScore {
+    width: 70%;
+    min-height: 50vH;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pollScore > div:first-child {
+    width: 100%;
+    max-height: 10vH;
+}
+
+.answers {
+    display: flex;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #2f3136;
+}
+
+.answers ol {
+    width: 100%;
+    list-style-type: lower-alpha;
+    padding: 0 10%;
+}
+
+.answers li {
+    margin: 5% auto;
+    padding: 5%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.correct {
+    background-color: #BBF5DF;
+    border: 2px solid #20FF84;
+}
+
+.wrong {
+    background-color: #FFA991;
+    border: 2px solid #992622;
+}
+
+.barred {
+    text-decoration: line-through;
+}
+
+@media screen and (max-width:991px) {
+
+    .answers ol {
+        padding: 0;
+    }
+
+    .pollResults > div:not(:first-child) {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .pollResults > div:first-child {
+        order: 1;
+    }
+
+    .pollResults > div:last-child {
+        order: 2;
+    }
+
+    .pollResults > div:nth-child(2) {
+        order: 3;
+    }
+
+
+
+}
+
+@media screen and (max-width:660px) {
+
+    .pollResults {
+
+        width: 75%;
+        margin: auto;
+        margin-right: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .scorePers p {
+        text-align: center;
+    }
+
+    .pollScore {
+
+        width: 75%;
+        margin: auto;
+        margin-right: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .scoreboard > div:not(:first-child) {
+        width: 100%;
+        transform: scale(0.8);
+    }
+
+    #user {
+        transform: scale(1.0);
+    }
+
+    .scorePers > div:not(:first-child) {
+        margin-top: 10%;
+    }
+}
