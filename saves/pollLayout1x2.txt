@@ -6,12 +6,12 @@
 
     <div class="pollChoices oneColumn">
 
-        <a href="results.php">
+        <div class="option">
 
             <h2>Option 1</h2>
         </a>
 
-        <a href="results.php">
+        <div class="option">
 
             <h2>Option 2</h2>
         </a>

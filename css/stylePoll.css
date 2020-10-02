@@ -17,7 +17,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.pollVote a {
+.pollVote .option {
     text-decoration: none;
     color: #2f3136;
 }
@@ -50,15 +50,15 @@
     align-items: center;
 }
 
-.pollChoices.oneColumn a:nth-child(odd) {
+.pollChoices.oneColumn .option:nth-child(odd) {
     transform-origin: center;
 }
 
-.pollChoices.oneColumn a:nth-child(even) {
+.pollChoices.oneColumn .option:nth-child(even) {
     transform-origin: center;
 }
 
-.pollVote a {
+.pollVote .option {
     border: 1px black solid;
     width: 48%;
     height: 20vH;
@@ -71,7 +71,7 @@
 
 }
 
-.pollVote a:hover {
+.pollVote .option:hover {
     transform: scale(1.2);
     position: relative;
     z-index: 10;
@@ -82,42 +82,42 @@
     width: 100%;
 }
 
-.pollChoices a:nth-child(odd) {
+.pollChoices .option:nth-child(odd) {
     transform-origin: right;
 }
 
-.pollChoices a:nth-child(even) {
+.pollChoices .option:nth-child(even) {
     transform-origin: left;
 }
 
-.pollChoices a:nth-child(1n) {
+.pollChoices .option:nth-child(1n) {
     background-color: #74b9ff;
 }
 
-.pollChoices a:nth-child(1n):hover {
+.pollChoices .option:nth-child(1n):hover {
     background-color: #3498db;
 }
 
-.pollChoices a:nth-child(2n) {
+.pollChoices .option:nth-child(2n) {
     background-color: #ff7675;
 }
-.pollChoices a:nth-child(2n):hover {
+.pollChoices .option:nth-child(2n):hover {
     background-color: #e74c3c;
 }
 
-.pollChoices a:nth-child(3n) {
+.pollChoices .option:nth-child(3n) {
     background-color: #55efc4;
 }
 
-.pollChoices a:nth-child(3n):hover {
+.pollChoices .option:nth-child(3n):hover {
     background-color: #2ecc71;
 }
 
-.pollChoices a:nth-child(4n) {
+.pollChoices .option:nth-child(4n) {
     background-color: #ffeaa7;
 }
 
-.pollChoices a:nth-child(4n):hover {
+.pollChoices .option:nth-child(4n):hover {
     background-color: #f1c40f;
 }
 

@@ -6,25 +6,25 @@
 
     <div class="pollChoices">
 
-        <a href="results.php">
+        <div class="option">
 
             <h2>Option 1</h2>
 
         </a>
 
-        <a href="results.php">
+        <div class="option">
 
             <h2>Option 2</h2>
 
         </a>
 
-        <a href="results.php">
+        <div class="option">
 
             <h2>Option 3</h2>
 
         </a>
 
-        <a href="results.php">
+        <div class="option">
 
             <h2>Option 4</h2>
 
