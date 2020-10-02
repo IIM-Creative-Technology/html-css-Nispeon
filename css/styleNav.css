@@ -28,6 +28,11 @@ nav {
 nav div {
     display: flex;
     width: 100%;
+    transition: 0.5s;
+}
+
+nav > div:not(:last-child):hover {
+    background-color: #292b30;
 }
 
 
@@ -38,6 +43,7 @@ nav div div{
     justify-content: center;
     align-items: center;
 }
+
 
 nav >  div:last-child {
     margin-top: auto;
@@ -50,6 +56,8 @@ nav div div a {
     font-family: 'Ubuntu', sans-serif;
     font-size: larger;
 }
+
+
 
 nav div div a:last-child {
     display: contents;
@@ -87,6 +95,7 @@ header input {
     color: white;
     padding: 2px;
 }
+
 
 header input::placeholder {
     color: white;

@@ -3,7 +3,7 @@
     <nav>
         
         <div>
-            <div><a href="">Profil</a></div>
+            <div><a href="">Connexion</a></div>
             <div><i class="fas fa-user openNav"></i></div>
         </div>
 
