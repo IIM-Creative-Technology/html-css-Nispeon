@@ -1,7 +1,7 @@
-var polls = [ 
+let polls = [ 
     
     poll1 = [
-        questionTitle = 'Quelle équipe va gagner ce soir ?', 
+        question = "Quelle équipe va gagner ce soir ?", 
         answers = [ 
             {choice : 'Paris Eternal', isRight : true},
             {choice : 'Houston Outlaws', isRight : false},
@@ -9,7 +9,7 @@ var polls = [
     ],
 
     poll2 = [
-        questionTitle = 'Quelle équipe deviendra championne ?', 
+        question = 'Quelle équipe deviendra championne ?', 
         answers = [ 
             {choice : 'Paris Eternal', isRight : true},
             {choice : 'Houston Outlaws', isRight : false},
@@ -26,19 +26,20 @@ var questSelec = 0;
 
 function displayPoll(polls, selecP, selecQ) {
 
-    // document.getElementsByClassName("pollVote")[0].remove()
+    selecQ = questSelec;
+    selecP = pollSelec;
 
     
-    var section = document.createElement('section');
+    let section = document.createElement('section');
 
     section.className = "pollVote";
 
-    var titleDiv = document.createElement('div');
+    let titleDiv = document.createElement('div');
 
     titleDiv.className = "pollTitle";
-    titleDiv.innerHTML ="<h1>" + polls[selecP][0] + "</h1>";
+    titleDiv.innerHTML = "<h1>" + polls[selecP][0] + "</h1>";
 
-    var space = document.createElement('div');
+    let space = document.createElement('div');
 
     space.className = "pollChoices";
 
@@ -49,55 +50,47 @@ function displayPoll(polls, selecP, selecQ) {
     document.querySelector(".pollVote").appendChild(space);
 
 
-    for (let i = 0; i < polls[0][1].length; i++) {
+    for (let i = 0; i < polls[selecP][1].length; i++) {
 
         let newDiv = document.createElement('div');
         newDiv.innerHTML = "<h2>" + polls[0][1][i]['choice'] + "</h2>";
         newDiv.className = "option";
-        newDiv.setAttribute('data-valid', polls[0][1][i]['isRight']);
+        newDiv.setAttribute('data-valid', polls[selecP][1][i]['isRight']);
         document.querySelector(".pollChoices").appendChild(newDiv);
+
+        document.getElementsByClassName("option")[i].addEventListener('click', displayPoll);
     }
 
-   
-    
+    // pollSelec++;
+    // questSelec++;
 
 
-
-    // console.log(polls[0][1].length);
-    // for (let i = 0; i < polls.length; i++) {
-
-    //     var section = document.createElement('section');
-
-    //     section.className = "pollVote";
-
-    //     document.querySelector("main").appendChild(section);
-
-    // }
 };
 
 displayPoll(polls, pollSelec, questSelec);
 
-function addEvent(elem, event, fn) {
-    if (elem.addEventListener)
-    {
-        elem.addEventListener(event, fn, false);
-    }
-    else
-    {
-        elem.attachEvent("on" + event, function() {
-            return(fn.call(elem, window.event));   
-        });
-    }
-};
+// function addEvent(elem, event, fn) {
+//     if (elem.addEventListener)
+//     {
+//         elem.addEventListener(event, fn, false);
+//     }
+//     else
+//     {
+//         elem.attachEvent("on" + event, function() {
+//             return(fn.call(elem, window.event));   
+//         });
+//     }
+// };
 
-addEvent(window, 'click', function(e){
-    var list = document.querySelector('.option');
-    addEvent(list, 'click',  function(e){
-         e = e || window.event;
-         var el = e.target || e.srcElement;
-         displayPoll(polls, selecP, selecQ);
-    });
-});
+// addEvent(document.querySelector('.option'), 'click', function(e){
+//     let list = document.querySelector('.option')[1];
+//     addEvent(list, 'click',  function(e){
+//          e = e || window.event;
+//          let el = e.target || e.srcElement;
+//          document.querySelector("pollVote")[0].remove()
+//          displayPoll(polls, selecP, selecQ);
+//     });
+// });
 
 
 
