@@ -10,25 +10,26 @@
 
             <h2>Option 1</h2>
 
-        </a>
+        </div>
 
         <div class="option">
 
             <h2>Option 2</h2>
 
-        </a>
+        </div>
 
         <div class="option">
 
             <h2>Option 3</h2>
 
-        </a>
+        </div>
 
         <div class="option">
 
+
             <h2>Option 4</h2>
 
-        </a>
+        </div>
 
     </div>
 

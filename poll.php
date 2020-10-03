@@ -14,7 +14,7 @@
 
         <main>
 
-        <section class="pollVote">
+        <!-- <section class="pollVote">
 
             <div class="pollTitle">
                 <h1>Question du sondage séléctionné</h1>
@@ -48,11 +48,11 @@
 
             </div>
 
-        </section>
+        </section> -->
         
         
         </main>
 
-
+    <script src="js/pollScript.js"></script>
     </body>
 </html>
