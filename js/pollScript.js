@@ -26,7 +26,9 @@ var questSelec = 0;
 
 function displayPoll(polls, selecP, selecQ) {
 
+    // document.getElementsByClassName("pollVote")[0].remove()
 
+    
     var section = document.createElement('section');
 
     section.className = "pollVote";
@@ -34,17 +36,29 @@ function displayPoll(polls, selecP, selecQ) {
     var titleDiv = document.createElement('div');
 
     titleDiv.className = "pollTitle";
+    titleDiv.innerHTML ="<h1>" + polls[selecP][0] + "</h1>";
 
-    var title = document.createElement('h1');
+    var space = document.createElement('div');
 
-    title.innerHTML = polls[selecP][0];
+    space.className = "pollChoices";
 
     
 
     document.querySelector("main").appendChild(section);
     document.querySelector(".pollVote").appendChild(titleDiv);
-    document.querySelector(".pollTitle").appendChild(title);
+    document.querySelector(".pollVote").appendChild(space);
 
+
+    for (let i = 0; i < polls[0][1].length; i++) {
+
+        let newDiv = document.createElement('div');
+        newDiv.innerHTML = "<h2>" + polls[0][1][i]['choice'] + "</h2>";
+        newDiv.className = "option";
+        newDiv.setAttribute('data-valid', polls[0][1][i]['isRight']);
+        document.querySelector(".pollChoices").appendChild(newDiv);
+    }
+
+   
     
 
 
