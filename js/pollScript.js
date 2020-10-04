@@ -75,7 +75,6 @@ function displayPoll(polls, selecP) {
 
         document.getElementsByClassName("option")[i].addEventListener('click', function() {
 
-
             document.querySelector(".pollVote").remove();
             
             displayPoll(polls, pollSelec);
