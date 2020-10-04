@@ -11,8 +11,8 @@ let polls = [
     poll2 = [
         question = 'Quelle équipe deviendra championne ?', 
         answers = [ 
-            {choice : 'Paris Eternal', isRight : true},
-            {choice : 'Houston Outlaws', isRight : false},
+            {choice : 'blblblblbl', isRight : true},
+            {choice : 'tktktkttktk', isRight : false},
             {choice : 'Florida Mayhem', isRight : false},
             {choice : 'London Spitfire', isRight : false},
         ],
@@ -21,15 +21,16 @@ let polls = [
 ];
 
 
-var pollSelec = 0;
-var questSelec = 0;
+let pollSelec = 0;
 
-function displayPoll(polls, selecP, selecQ) {
+function displayPoll(polls, selecP) {
 
-    selecQ = questSelec;
-    selecP = pollSelec;
 
-    
+
+    if( typeof selecP == 'undefined' ) {
+        selecP = 0;
+    }
+
     let section = document.createElement('section');
 
     section.className = "pollVote";
@@ -53,21 +54,25 @@ function displayPoll(polls, selecP, selecQ) {
     for (let i = 0; i < polls[selecP][1].length; i++) {
 
         let newDiv = document.createElement('div');
-        newDiv.innerHTML = "<h2>" + polls[0][1][i]['choice'] + "</h2>";
+        newDiv.innerHTML = "<h2>" + polls[selecP][1][i]['choice'] + "</h2>";
         newDiv.className = "option";
         newDiv.setAttribute('data-valid', polls[selecP][1][i]['isRight']);
         document.querySelector(".pollChoices").appendChild(newDiv);
 
-        document.getElementsByClassName("option")[i].addEventListener('click', displayPoll);
+        document.getElementsByClassName("option")[i].addEventListener('click', function() {
+
+            document.querySelector(".pollVote").remove();
+            displayPoll(polls, pollSelec) 
+        
+        });
     }
 
-    // pollSelec++;
-    // questSelec++;
+    pollSelec++;
 
 
 };
 
-displayPoll(polls, pollSelec, questSelec);
+displayPoll(polls, pollSelec);
 
 // function addEvent(elem, event, fn) {
 //     if (elem.addEventListener)
