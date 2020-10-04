@@ -1,30 +1,31 @@
 let polls = [ 
     
     poll1 = [
-        question = "Quelle équipe va gagner ce soir ?", 
+        question = "Meilleures vacances ?", 
         answers = [ 
-            {choice : 'Paris Eternal', isRight : true},
-            {choice : 'Houston Outlaws', isRight : false},
+            {choice : 'Plage', isRight : true},
+            {choice : 'Montagne', isRight : false},
         ],
     ],
 
     poll2 = [
-        question = 'Quelle équipe deviendra championne ?', 
+        question = 'Meilleure couleur ?', 
         answers = [ 
-            {choice : 'blblblblbl', isRight : true},
-            {choice : 'tktktkttktk', isRight : false},
-            {choice : 'Florida Mayhem', isRight : false},
-            {choice : 'London Spitfire', isRight : false},
+            {choice : 'Bleu', isRight : false},
+            {choice : 'Rouge', isRight : false},
+            {choice : 'Vert', isRight : true},
+            {choice : 'Jaune', isRight : false},
         ],
     ],
 
     poll3 = [
-        question = 'Sample text', 
+        question = 'Meilleur axe de l\'IIM ?', 
         answers = [ 
-            {choice : 'Sample text', isRight : true},
-            {choice : 'Sample text', isRight : false},
-            {choice : 'Sample text', isRight : false},
-            {choice : 'Sample text', isRight : false},
+            {choice : 'DW', isRight : true},
+            {choice : 'Créa', isRight : false},
+            {choice : 'JV', isRight : false},
+            {choice : '3D', isRight : false},
+            {choice : 'CDEB', isRight : false},
         ],
     ],
     
@@ -33,11 +34,12 @@ let polls = [
 
 let pollSelec = 0;
 
+let score = 0;
+
 function displayPoll(polls, selecP) {
 
 
-    console.log(selecP);
-    debugger;
+    // console.log(selecP);
 
     // if( typeof selecP == 'undefined' ) {
     //     selecP = 0;
@@ -54,7 +56,11 @@ function displayPoll(polls, selecP) {
 
     let space = document.createElement('div');
 
-    space.className = "pollChoices";
+    if(polls[selecP][1].length <= 4) {
+        space.className = "pollChoices";
+    } else {
+        space.className = "pollChoices oneColumn";
+    }
 
     
 
@@ -63,7 +69,6 @@ function displayPoll(polls, selecP) {
     document.querySelector(".pollVote").appendChild(space);
 
 
-    debugger;
 
     for (let i = 0; i < polls[selecP][1].length; i++) {
 
@@ -75,12 +80,23 @@ function displayPoll(polls, selecP) {
 
         document.getElementsByClassName("option")[i].addEventListener('click', function() {
 
+            let rep = this.getAttribute("data-valid");
+
+            if(rep == "true") {
+
+                score++;
+
+            }
+
+            console.log(score);
+
             document.querySelector(".pollVote").remove();
             
             displayPoll(polls, pollSelec);
-               
+            
         });
     }
+
 
     pollSelec++;
 
