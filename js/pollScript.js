@@ -75,20 +75,11 @@ function displayPoll(polls, selecP) {
 
         document.getElementsByClassName("option")[i].addEventListener('click', function() {
 
-            document.querySelector(".pollVote").style.opacity = "0";
-            document.querySelector(".pollVote").addEventListener('transitionend', function() {
-                this.remove();
-                displayPoll(polls, pollSelec);
-                
 
-            });
-
-            debugger;
-
-            document.querySelector(".pollVote").style.opacity = "1";
-
-            debugger;
-
+            document.querySelector(".pollVote").remove();
+            
+            displayPoll(polls, pollSelec);
+               
         });
     }
 
