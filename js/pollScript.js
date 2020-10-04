@@ -17,6 +17,16 @@ let polls = [
             {choice : 'London Spitfire', isRight : false},
         ],
     ],
+
+    poll3 = [
+        question = 'Sample text', 
+        answers = [ 
+            {choice : 'Sample text', isRight : true},
+            {choice : 'Sample text', isRight : false},
+            {choice : 'Sample text', isRight : false},
+            {choice : 'Sample text', isRight : false},
+        ],
+    ],
     
 ];
 
@@ -26,10 +36,12 @@ let pollSelec = 0;
 function displayPoll(polls, selecP) {
 
 
+    console.log(selecP);
+    debugger;
 
-    if( typeof selecP == 'undefined' ) {
-        selecP = 0;
-    }
+    // if( typeof selecP == 'undefined' ) {
+    //     selecP = 0;
+    // }
 
     let section = document.createElement('section');
 
@@ -51,6 +63,8 @@ function displayPoll(polls, selecP) {
     document.querySelector(".pollVote").appendChild(space);
 
 
+    debugger;
+
     for (let i = 0; i < polls[selecP][1].length; i++) {
 
         let newDiv = document.createElement('div');
@@ -61,9 +75,20 @@ function displayPoll(polls, selecP) {
 
         document.getElementsByClassName("option")[i].addEventListener('click', function() {
 
-            document.querySelector(".pollVote").remove();
-            displayPoll(polls, pollSelec) 
-        
+            document.querySelector(".pollVote").style.opacity = "0";
+            document.querySelector(".pollVote").addEventListener('transitionend', function() {
+                this.remove();
+                displayPoll(polls, pollSelec);
+                
+
+            });
+
+            debugger;
+
+            document.querySelector(".pollVote").style.opacity = "1";
+
+            debugger;
+
         });
     }
 
