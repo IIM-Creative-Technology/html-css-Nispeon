@@ -8,6 +8,18 @@
     width: 100%;
 }
 
+.pollBody main > p {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: xx-large;
+    margin: 2%;
+    background-color: #2f3136;
+    color: white;
+    border-radius: 5px;
+}
+
 .pollVote {
     width: 70%;
     margin: 26vH auto 20px 20%;
@@ -129,7 +141,7 @@
     background-color: rgba(0,0,0,0.5);
     z-index: 20;
     position: fixed;
-    transition: 1.5s;
+    transition: 0.5s;
 }
 
 .popform {
@@ -169,6 +181,7 @@
 .namae {
     width: 85%;
     margin: auto;
+    outline: none;
 }
 .namae[data-state="valid"] {
     border-color: hsl(120, 76%, 50%);
@@ -193,7 +206,7 @@
 
     .pollVote {
         width: 75%;
-        margin: 5% 0 2% auto;
+        margin: 40% 0 2% auto;
     }
 
     .pollChoices a {

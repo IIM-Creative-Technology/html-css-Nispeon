@@ -20,17 +20,20 @@
                     <form>
 
                     <label>Quel est ton nom ?</label>
-                    <input type="text" class="namae" placeholder="Nom..." required>
+                    <input type="text" class="namae" placeholder="Nom..." maxlength="12">
                     
                     <div type="submit" class="sub">Commencer</div>
                     
                     </form>
                 </div>
+
+                
             
             
             </div>
         
-        
+            <p id="topname"></p>
+
         </main>
 
     <script src="js/pollScript.js"></script>

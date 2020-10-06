@@ -57,7 +57,7 @@ function popup() {
 
         document.getElementById("pf").className = "popform gone";
 
-        document.querySelector(".popup").style.display = "none";
+        document.querySelector(".popup").style.visibility = "hidden";
     }
 
 }
@@ -89,6 +89,7 @@ function getname() {
         alert('Choisis un nom');
     } else {
 
+        document.querySelector("#topname").innerHTML = username.trim();
         console.log(username);
         popup();
 
