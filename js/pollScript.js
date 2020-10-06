@@ -36,14 +36,73 @@ let pollSelec = 0;
 
 let score = 0;
 
+let username = " ";
+
+
+window.addEventListener('load', popup);
+
+document.querySelector(".sub").addEventListener('click', getname);
+
+
+
+
+function popup() {
+
+    let shown = document.getElementById("pf").className;
+
+    if (shown == "popform gone") {
+
+        document.getElementById("pf").className = "popform";
+    } else {
+
+        document.getElementById("pf").className = "popform gone";
+
+        document.querySelector(".popup").style.display = "none";
+    }
+
+}
+
+const input = document.querySelector('.namae');
+
+input.addEventListener('input', evt => {
+    const value = input.value
+    
+    if (!value) {
+        input.dataset.state = ''
+        return
+    }
+    
+    const trimmed = value.trim()
+    
+    if (trimmed) {
+        input.dataset.state = 'valid'
+    } else {
+        input.dataset.state = 'invalid'
+    }
+});
+
+function getname() {
+
+    username = document.querySelector(".namae").value;
+
+    if (username.trim() == "") {
+        alert('Choisis un nom');
+    } else {
+
+        console.log(username);
+        popup();
+
+    }
+
+}
+
+
+
+
+
 function displayPoll(polls, selecP) {
 
 
-    // console.log(selecP);
-
-    // if( typeof selecP == 'undefined' ) {
-    //     selecP = 0;
-    // }
 
     let section = document.createElement('section');
 
@@ -105,28 +164,6 @@ function displayPoll(polls, selecP) {
 
 displayPoll(polls, pollSelec);
 
-// function addEvent(elem, event, fn) {
-//     if (elem.addEventListener)
-//     {
-//         elem.addEventListener(event, fn, false);
-//     }
-//     else
-//     {
-//         elem.attachEvent("on" + event, function() {
-//             return(fn.call(elem, window.event));   
-//         });
-//     }
-// };
-
-// addEvent(document.querySelector('.option'), 'click', function(e){
-//     let list = document.querySelector('.option')[1];
-//     addEvent(list, 'click',  function(e){
-//          e = e || window.event;
-//          let el = e.target || e.srcElement;
-//          document.querySelector("pollVote")[0].remove()
-//          displayPoll(polls, selecP, selecQ);
-//     });
-// });
 
 
 

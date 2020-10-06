@@ -14,7 +14,21 @@
 
         <main>
 
-       
+            <div class="popup">
+            
+                <div class="popform gone" id="pf">
+                    <form>
+
+                    <label>Quel est ton nom ?</label>
+                    <input type="text" class="namae" placeholder="Nom..." required>
+                    
+                    <div type="submit" class="sub">Commencer</div>
+                    
+                    </form>
+                </div>
+            
+            
+            </div>
         
         
         </main>
