@@ -6,30 +6,32 @@
 
     <div class="pollChoices oneColumn">
 
-        <div class="option">
+        <a href="results.php">
 
             <h2>Option 1</h2>
 
-        </div>
+        </a>
 
-        <div class="option">
+        <a href="results.php">
 
             <h2>Option 2</h2>
 
-        </div>
+        </a>
 
-        <div class="option">
+        <a href="results.php">
 
             <h2>Option 3</h2>
 
-        </div>
+        </a>
 
-        <div class="option">
+        <a href="results.php">
 
             <h2>Option 4</h2>
 
-        </div>
+        </a>
 
     </div>
+
+
 
 </section>

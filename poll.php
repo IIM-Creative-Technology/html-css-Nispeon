@@ -14,28 +14,139 @@
 
         <main>
 
-            <div class="popup">
-            
-                <div class="popform gone" id="pf">
-                    <form>
+            <section class="pollVote">
 
-                    <label>Quel est ton nom ?</label>
-                    <input type="text" class="namae" placeholder="Nom..." maxlength="12">
-                    
-                    <div type="submit" class="sub">Commencer</div>
-                    
-                    </form>
+                <div class="pollTitle">
+                    <h1>Question du sondage séléctionné</h1>
                 </div>
 
-                
-            
-            
-            </div>
-        
-            <p id="topname"></p>
+                <div class="pollChoices">
 
+                    <a href="results.php">
+
+                        <h2>Option 1</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 2</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 3</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 4</h2>
+
+                    </a>
+
+                </div>
+
+
+
+            </section>
+
+            <section class="pollVote">
+
+                <div class="pollTitle">
+                    <h1>Question du sondage séléctionné</h1>
+                </div>
+
+                <div class="pollChoices oneColumn">
+
+                    <a href="results.php">
+
+                        <h2>Option 1</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 2</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 3</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 4</h2>
+
+                    </a>
+
+                </div>
+
+
+
+            </section>
+
+            <section class="pollVote">
+
+                <div class="pollTitle">
+                    <h1>Question du sondage séléctionné</h1>
+                </div>
+
+                <div class="pollChoices oneColumn">
+
+                    <a href="results.php">
+
+                        <h2>Option 1</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 2</h2>
+
+                    </a>
+
+
+                </div>
+
+
+
+            </section>
+
+            <section class="pollVote">
+
+                <div class="pollTitle">
+                    <h1>Question du sondage séléctionné</h1>
+                </div>
+
+                <div class="pollChoices">
+
+                    <a href="results.php">
+
+                        <h2>Option 1</h2>
+
+                    </a>
+
+                    <a href="results.php">
+
+                        <h2>Option 2</h2>
+
+                    </a>
+
+
+                </div>
+
+
+
+            </section>
+        
+        
         </main>
 
-    <script src="js/pollScript.js"></script>
+
     </body>
 </html>
